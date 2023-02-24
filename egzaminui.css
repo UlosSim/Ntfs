@@ -2,22 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+
   font-family: sans-serif;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
+
 span {
-  color: rgb(255, 131, 190);
+  color: rgb(255, 57, 152);
 }
 p,
 a {
   color: rgb(153, 153, 153);
 }
+
 section {
   padding-left: 20px;
 }
 h1 {
   padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
 }
 header {
   display: flex;
@@ -26,10 +30,26 @@ header {
   height: auto;
   padding: 20px;
 }
+.menu {
+  width: 25px;
+  height: 4px;
+  background-color: rgb(142, 131, 142);
+  margin: 6px 0;
+  border-radius: 6px;
+}
 .launching {
+  min-height: 400px;
   display: flex;
-  position: relative;
   justify-content: space-between;
+  position: relative;
+  padding-top: 40px;
+}
+.launching second {
+  min-height: 1000px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 40px;
 }
 .launch-p {
   font-size: 10px;
@@ -40,29 +60,143 @@ header {
 .launching-left {
   width: 56%;
 }
-.sign-up {
-  margin: 20px auto 50px;
-  padding: 10px 36px;
-  border-radius: 20px;
-  border: 2px solid red;
-  background-color: transparent;
-  font-weight: 600;
+.launching-left second {
 }
+
+.launching-right img {
+  max-width: 100%;
+  max-height: 60%;
+  position: absolute;
+  left: 45%;
+  top: -30px;
+  z-index: 22;
+  overflow: hidden;
+}
+.launching-right second img {
+  max-width: 100%;
+  position: absolute;
+  left: 45%;
+  top: -30px;
+  z-index: 22;
+  overflow: hidden;
+}
+button {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 100rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 3rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #ff3998, #fe7b4b, #c3b067);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
 .free {
-  /* background-image: url(../html/assets/photo/kong.jpg); */
+  background-image: url(assets/background.svg);
+  background-position: center;
+  background-size: cover;
   padding: 70px 20px 15px;
-  background-color: rgb(142, 131, 142);
+}
+.free p {
+  color: black;
 }
 .companies {
-  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 100%;
   height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: lightcyan;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 50px;
+  margin-right: 20px;
 }
+.companies-logo {
+  overflow: hidden;
+  max-width: 90%;
+  margin-right: 25px;
+  margin-left: 25px;
+  overflow: hidden;
+  justify-self: center;
+}
+
 a {
   font-weight: 600;
 }
-nft-auction {
-  background-color: rgb(142, 131, 142);
+.auction {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 100px 400px;
+  margin-bottom: 40px;
+}
+.about-auction {
+  grid-column: 1/3;
+}
+.nft-auction {
+  border-radius: 12px;
+  min-width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+.nft-cards {
+  grid-column: 1/3;
+  display: flex;
+  column-gap: 25px;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  height: auto;
+}
+.auction-info {
+  background-color: rgb(224, 217, 224);
+  padding-top: 15px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nft-auction one {
+  width: 300px;
+  height: auto;
+}
+.info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.nft-auction p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.orange {
+  color: orange;
+}
+.footer-info {
+  display: flex;
+
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
